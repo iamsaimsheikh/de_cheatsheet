@@ -14,5 +14,6 @@ latte['Delta Revenue'] = latte['Previous Day Revenue'] - latte['Revenue']
 latte['Revenue Rank'] = latte['Revenue'].rank()
 
 # rolling
+
 latte['3day'] = latte['Units Sold'].rolling(3).sum()
 print(latte)
